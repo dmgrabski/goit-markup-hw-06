@@ -1,1 +1,1 @@
-https://dmgrabski.github.io/goit-markup-hw-05/
+https://dmgrabski.github.io/goit-markup-hw-06/
