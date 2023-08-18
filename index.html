@@ -433,29 +433,30 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
-          <form>
-            <label class="footer-subscribe-lable">
-              Subscribe
-              <div>
+        <div class="subscribe-wrapper">
+          <span class="footer-title">Subscribe</span>
+          <form name="subscribe">
+            <div class="subscribe-field-wrapper">
+              <label for="email">
                 <input
-                 class="footer-input-subscribe"
+                  id="email"
                   type="email"
-                  name="Subscribe"
                   placeholder="E-mail"
+                  class="subscribe-email"
+                  required
                 />
-                </label>
-                <button class="footer-button-subscribe" type="submit">
-                  
+              </label>
+              <button class="subscribe-button" tyle="submit">
                 Subscribe
-                <svg class="subscribe-svg">
+                <div class="send-icon">
+                  <svg widht="24px" height="24px">
                     <use href="./images/icons.svg#icon-Frame-3"></use>
                   </svg>
-                </button>
+                </div>
+              </button>
             </div>
           </form>
         </div>
-      </div>
       </div>
       
     </footer>
@@ -467,8 +468,63 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <h3>Leave your contacts and we will call you back</h3>
+        <form name="order_service" class="modal-inputs-wrapper">
+          <label for="username"> <span class="input-label">Name</span></label>
+          <div class="input-wrapper">
+            <input id="username" type="text" name="username" required />
+            <svg width="18px" height="24px" class="modal-icon">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label for="phone"> <span class="input-label">Phone</span></label>
+          <div class="input-wrapper">
+            <input id="phone" type="tel" name="phone" required />
+            <svg width="18px" height="24px" class="modal-icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="email"><span class="input-label">Email</span></label>
+          <div class="input-wrapper">
+            <input id="email" type="email" name="email" required />
+            <svg width="18px" height="24px" class="modal-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label for="comment"> <span class="input-label">Comment</span></label>
+          <div class="input-wrapper">
+            <textarea id="comment" name="comment" placeholder="Text inputs">
+            </textarea>
+          </div>
+          <div class="tc-accept-wrapper">
+            <label for="tc-accept">
+              <input
+                id="tc-accept"
+                type="checkbox"
+                name="tc-accept"
+                class="checkbox"
+              />
+              <div class="checkbox-icon">
+                <svg width="14px" height="14px">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </div>
+              <span class="input-label"
+                >I accept the terms and conditions of the
+                <a href="" class="link">Privacy Policy</a></span
+              ></label
+            >
+          </div>
+          <div class="send-wrapper">
+            <button type="submit" class="send-button">Send</button>
+          </div>
+        </form>
       </div>
     </div>
+      </div>
+    </div>
+
+    
 
     <script src="./js/modal.js"></script>
   </body>

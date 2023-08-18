@@ -289,25 +289,27 @@
               </li>
             </ul>
           </div>
-          <div class="footer-form">
-            <form>
-              <label class="footer-subscribe-lable">
-                Subscribe
-                <div>
+          <div class="subscribe-wrapper">
+            <span class="footer-title">Subscribe</span>
+            <form name="subscribe">
+              <div class="subscribe-field-wrapper">
+                <label for="email">
                   <input
-                   class="footer-input-subscribe"
+                    id="email"
                     type="email"
-                    name="Subscribe"
                     placeholder="E-mail"
+                    class="subscribe-email"
+                    required
                   />
-                  </label>
-                  <button class="footer-button-subscribe" type="submit">
-                    
+                </label>
+                <button class="subscribe-button" tyle="submit">
                   Subscribe
-                  <svg class="subscribe-svg">
+                  <div class="send-icon">
+                    <svg widht="24px" height="24px">
                       <use href="./images/icons.svg#icon-Frame-3"></use>
                     </svg>
-                  </button>
+                  </div>
+                </button>
               </div>
             </form>
           </div>
