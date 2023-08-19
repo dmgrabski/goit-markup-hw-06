@@ -479,7 +479,7 @@
           </div>
           <label for="phone"> <span class="input-label">Phone</span></label>
           <div class="input-wrapper">
-            <input id="phone" type="tel" name="phone" required />
+            <input id="phone" type="number" name="phone" required />
             <svg width="18px" height="24px" class="modal-icon">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
@@ -493,8 +493,7 @@
           </div>
           <label for="comment"> <span class="input-label">Comment</span></label>
           <div class="input-wrapper">
-            <textarea id="comment" name="comment" placeholder="Text inputs">
-            </textarea>
+            <textarea id="comment" name="comment" placeholder="Text inputs"></textarea>
           </div>
           <div class="tc-accept-wrapper">
             <label for="tc-accept">
@@ -503,6 +502,7 @@
                 type="checkbox"
                 name="tc-accept"
                 class="checkbox"
+                required
               />
               <div class="checkbox-icon">
                 <svg width="14px" height="14px">
